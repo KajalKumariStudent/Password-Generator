@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- NAV BAR  -->
+    <nav>
+        <div class="logo">Pass Generator</div>
+        <div class="nav-btns">
+            <div class="home"><a href="index.html">HOME</a></div>
+            <div class="about"> <a href="about.html">ABOUT</a></div>
+        </div>
+    </nav>
+    
+    <!-- GENERATING PASSWORD BOX -->
+    <div class="background">
+    <div class="passbox">
+       <div class="passgen">Password Generator</div> 
+        <hr>
+        <span id="textpass"><input type="text" id="textin"  placeholder="Your password is here" value="15" disabled></span>
+        <button id="copy"><img src="copy.png" height="40px" class="copypass"
+            width="40px"></button>
+        <br>
+        <div class="pass-indicator"></div>
+
+        <label for="slider">Password Length</label>
+        <input type="range" id="slider" name="slider" min="0" max="30" value="15">
+      
+        <!-- Optional: Display the current value -->
+        <span id="sliderValue" value="15"  > </span>
+        
+        <div><div class="passset">Password Settings</div>
+                <div class="checkboxes">
+                    
+                        <span class="option">
+                        </label><input type="checkbox" value=" Lowercase(a-z)" id="lowercase"  checked> Lowercase(a-z) </input > </span>    
+                    
+                        <span class="option"><input type="checkbox" value=" Uppercase(A-Z)" id="uppercase" > UpperCase(A-Z)</input ></span>
+                    
+                        <span class="option"><input type="checkbox" value=" Numbers(0-9)" id="numbers" > Numbers(0-9)</input ></span>
+                    
+                        <span class="option"><input type="checkbox" value=" Symbols(~!@#$%)" id="symbols" > Symbols(~!@#$%)</input ></span>
+                    
+                        <span class="option"><input type="checkbox" value="Exclude Duplicate"id="Exc-Duplicates"  >Exclude Duplicate</input ></span>
+                    
+                        <span class="option"><input type="checkbox" value=" Include Spaces" id="In-Spaces" > Include Spaces</input ></span>
+                    
+                  
+                </div>          
+                 
+                   
+              <button class="button">Generate Password</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
