@@ -1,0 +1,190 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    
+}
+nav
+{
+    background: #145DA0;
+    color: white;
+    height: 80px;
+    width: 100%;
+    position:relative;
+   
+}
+.nav-btns
+{
+    display:flex;
+    float:right;
+    position:absolute;
+    top:30px;
+    right:50px;
+    padding-top: 0px;
+    gap:50px;
+    cursor: pointer;
+    
+}
+
+.logo
+{
+    width:300px;
+    padding:5px;
+    align-self:center;
+    position:absolute;
+    top:7px; 
+    left:50px;
+    font-size: 35px;
+    font-weight: 500;
+    border: 2.5px solid white;
+}
+.about{
+    text-transform: none;
+}
+.passbox{
+    background-color:rgb(235, 226, 226);
+    width: 400px;
+    height: 450px;
+    margin-left: 400px;
+    margin-top: 50px;
+    
+}
+#copy{
+    margin-left: 300px;
+    margin-top: 15px;
+    margin-bottom:15px;
+    height: 40px;
+    width: 40px;
+    border: 0.5px solid rgb(54, 53, 53);
+}
+.passgen{
+    font-weight: bold;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 20%;
+    padding-top: 15px;
+    font-size: 25px;
+}
+#textpass{
+    position: absolute;
+}
+#textin{
+    height: 40px;
+    width: 300px;
+    margin-left:10%;
+    margin-bottom: 15px;
+    margin-top:15px ;
+    position: relative;
+    display: inline;
+    color: black;
+    background-color: white;
+    border: 0.5px solid  rgb(54, 53, 53);
+}
+.passset{
+    margin-top: 15px;
+    margin-left:35px ;
+    font-weight: bold;
+}
+li{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.home{
+    display: inline;
+}
+.about{
+    display: inline;
+}
+.home:hover{
+    background-color: #1b9bff;
+    transition:0.5s;
+}
+.about:hover{
+    background-color: #1b9bff;
+    transition:0.5s;
+}
+.button{
+   width: 90%;
+   margin: 20px;
+   border-radius: 10px;
+   height: 40px;
+}
+#lowercase{
+    margin: 15px;
+    margin-inline-end: 0px;
+    margin-inline-start: 30px;
+}
+#uppercase{
+    margin:15px;
+    margin-inline-end: 0px;
+    margin-inline-start: 35px;
+}
+#numbers{
+    margin: 15px;
+    margin-inline-end: 0px;
+    margin-inline-start: 30px;
+}
+#symbols{
+    margin:15px;
+    margin-inline-end: 0px;
+    margin-inline-start: 46px;
+}
+#Exc-Duplicates{
+    margin: 15px;
+    margin-inline-end: 5px;
+    margin-inline-start: 30px;
+}
+#In-Spaces{
+    margin:15px;
+   margin-inline-end: 0px;
+   margin-inline-start: 21px;
+}
+.background{
+    background-color: #D4F1F4;
+    height: 100vh;
+    background-image: url("istockphoto-1467104415-170667a.webp");
+}
+.pass-indicator{
+    width: 90%;
+    height: 4px;
+    position: relative;
+    background: #dfdfdf;
+    margin-top: 0.75rem;
+    border-radius: 25px;
+    margin-left: 5%;
+}
+
+.pass-indicator::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    transition: width 0.3s ease;
+}
+
+.pass-indicator#weak::before{
+    width: 20%;
+    background: #E64A4A;
+}
+.pass-indicator#medium::before{
+    width: 50%;
+    background: #f1c80b;
+}
+.pass-indicator#strong::before{
+    width: 100%;
+    background: seagreen;
+}
+#sliderValue{
+    width: 30px;
+    height: 30px;
+}
